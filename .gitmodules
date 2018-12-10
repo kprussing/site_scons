@@ -1,0 +1,3 @@
+[submodule "site_tools/pandoc"]
+	path = site_tools/pandoc
+	url = git@github.com:kprussing/scons-pandoc.git

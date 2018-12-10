@@ -7,14 +7,13 @@ import os
 # Load the tools.
 from inkscape import add_inkscape
 from revtex import add_revtex
-from pandoc import add_pandoc, template, preamble, myfilter
 from matlab import add_matlab
 
 # Define a generic environment for all builds.
 
 from SCons.Script import Environment
 
-tools=["default", add_inkscape, add_revtex, add_pandoc, add_matlab]
+tools=["default", add_inkscape, add_revtex, "pandoc.pandoc", add_matlab]
 
 env = Environment(
         ENV=os.environ, PDFLATEX="lualatex", tools=tools
