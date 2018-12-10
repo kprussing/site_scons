@@ -5,7 +5,6 @@ import os
 # print("site_init.py loaded!")
 
 # Load the tools.
-from inkscape import add_inkscape
 from revtex import add_revtex
 from matlab import add_matlab
 
@@ -13,7 +12,7 @@ from matlab import add_matlab
 
 from SCons.Script import Environment
 
-tools=["default", add_inkscape, add_revtex, "pandoc.pandoc", add_matlab]
+tools=["default", "inkscape", add_revtex, "pandoc.pandoc", add_matlab]
 
 env = Environment(
         ENV=os.environ, PDFLATEX="lualatex", tools=tools

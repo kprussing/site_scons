@@ -1,3 +1,6 @@
 [submodule "site_tools/pandoc"]
 	path = site_tools/pandoc
 	url = git@github.com:kprussing/scons-pandoc.git
+[submodule "site_tools/inkscape"]
+	path = site_tools/inkscape
+	url = git@github.com:kprussing/scons-inkscape.git
